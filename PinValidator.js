@@ -6,7 +6,9 @@ function validatePin(pin)
     //UC1
     //let pinRegExp = RegExp('^[0-9]{6}$');
     //UC2
-    let pinRegExp = RegExp('^[0-9]{1}[a-zA-Z0-9]{5}$');
+    //let pinRegExp = RegExp('^[0-9]{1}[a-zA-Z0-9]{5}$');
+    //UC3
+    let pinRegExp = RegExp('^[0-9]{1}[a-zA-Z0-9]{4}[0-9]{1}$');
     if (pinRegExp.test(pin))
         console.log("Valid pin")
     else
