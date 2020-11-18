@@ -3,7 +3,10 @@ let pin = prompt('Enter pin: ');
 validatePin(pin);
 function validatePin(pin)
 {
-    let pinRegExp = RegExp('^[0-9]{6}$');
+    //UC1
+    //let pinRegExp = RegExp('^[0-9]{6}$');
+    //UC2
+    let pinRegExp = RegExp('^[0-9]{1}[a-zA-Z0-9]{5}$');
     if (pinRegExp.test(pin))
         console.log("Valid pin")
     else
